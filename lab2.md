@@ -100,12 +100,12 @@ boolean a = false, b = true;
 ```
 
 Логические операции.
-| `a`	| `b` | `a & b`	<br> `a && b` | `a | b` <br> `a || b` |`a ^ b`          | `~ a` <br> `! a` |
-|--|--|--|--|--|--|
-| `true`	|`true`	|`true`	|`true`	|`false`	|`false` |
-| `true`	|`false`	|`false`	|`true`	|`true`	|`false` |
-| `false`	|`true`	|`false`	|`true`	|`true`	|`true`  |
-| `false`	|`false`	|`false`	|`false`	|`false`	|`true`  |
+|       a      |       b      |   a&b a&&b   |  a\|b a\|\|b |      a^b     |     ~a !a    |
+|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
+|     true     |     true     |     true     |     true     |     false    |     false    |
+|     true     |     false    |     false    |     true     |     true     |     false    |
+|     false    |     true     |     false    |     true     |     true     |     true     |
+|     false    |     false    |     false    |     false    |     false    |     true     |
 
 ### Строки
 
