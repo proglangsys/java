@@ -6,7 +6,7 @@
 
 [Java Development Kit](https://ru.wikipedia.org/wiki/Java_Development_Kit) (JDK) — комплект инструментальных средств для разработки приложений на языке [Java](https://ru.wikipedia.org/wiki/Java). Включает компилятор [javac](https://ru.wikipedia.org/wiki/Javac), утилиты, библиотеки классов Java API, документацию и примеры, среду исполнения приложений — [Java Runtime Environment](https://ru.wikipedia.org/wiki/Java_Runtime_Environment) (JRE).
 
-JRE включает виртуальную машину [Java VirtualMachine](https://ru.wikipedia.org/wiki/Java_Virtual_Machine) (VM) и откомпилированные библиотеки классов Java API. Позволяет запускать Java приложения на любых устройствах или операционных системах.
+JRE включает виртуальную машину [Java Virtual Machine](https://ru.wikipedia.org/wiki/Java_Virtual_Machine) (VM) и откомпилированные библиотеки классов Java API. Позволяет запускать Java приложения на любых устройствах или операционных системах.
 
 Существует три редакции JDK:
 
@@ -43,14 +43,14 @@ public class MyMainClass {
 Вывод текста в командную строку осуществляется через встроенный поток вывода:
 ```java
 public class MyMainClass {
-    // main-__метод_  
+    // main-метод  
     public static void main(String[] args) {  
         // Вывести сообщение "my text" в командную строку
         System.out.println("my text");  
     }  
 }
 ```
-
+ 
 ### Создание, сборка и запуск проекта
 
 #### Создать новый проект
@@ -93,7 +93,7 @@ public class MyMainClass {
 
 Выбрать пункт меню «Run | Run…» или нажать кнопку «Run» на панели инструментов сверху — «зеленый треугольник» (Alt+Shift+F10). В раскрывшемся списке выбрать «MyMainClass».
 
-Запустится компиляция исходного кода программы в байт-код и затем исполнение приложения в Java VM. Результат выполнения программы, сообщение «HelloWorld!», будет выводиться во встроенной командной строке.
+Запустится компиляция исходного кода программы в байт-код и затем исполнение приложения в Java VM. Результат выполнения программы, сообщение «Hello World!», будет выводиться во встроенной командной строке.
 
 ![Снимок экрана: проект (слева) и редактируемый класс (справа)](https://github.com/proglangsys/java/blob/main/images/lab1_3.png)
 
@@ -119,7 +119,7 @@ cd <path to the target directory>
 java ru.isu.math.example.MyMainClass
 ```
 
-В случае если, переменная среды JAVA_HOME не настроена, следует указывать полный путь к компилятору javac и виртуальной машине java соответственно:
+> Когда переменная среды JAVA_HOME не настроена, следует указывать полный путь к компилятору javac и виртуальной машине java соответственно:
 ```bash
 <path to JDK>/bin/javac -d target ru/isu/math/example/MyMainClass.java
 <path to JDK>/bin/java ru.isu.math.example.MyMainClass
@@ -131,13 +131,12 @@ java ru.isu.math.example.MyMainClass
 ```bash
 cd <path to the target directory>
 ```
-
 запустить дизассемблер javap, указав в качестве параметра название файла с байт-кодом:
 ```bash
 javap -c ru/isu/math/example/MyMainClass.class
 ```
 
-В случае если, переменная среды JAVA_HOME не настроена, следует указывать полный путь к дизассемблеру javap:
+> Когда переменная среды JAVA_HOME не настроена, следует указывать полный путь к дизассемблеру javap:
 ```bash
 <path to JDK>/bin/javap -c ru/isu/math/example/MyMainClass.class
 ```
@@ -233,8 +232,14 @@ java ru.isu.math.example.MyMainClass p0 p1 p2
 
 ### Евклидово расстояние между заданными точками
 
-Для двух точек двухмерного пространства ![p_1=\left(x_1,y_1\right)](https://bit.ly/3ReTrYQ) и ![p_2=\left(x_2,y_2\right)](https://bit.ly/3eg69b8) евклидово расстояние вычисляется следующим:
+Для двух точек двухмерного пространства 
+
+![p_1=\left(x_1,y_1\right)](https://bit.ly/3ReTrYQ) и ![p_2=\left(x_2,y_2\right)](https://bit.ly/3eg69b8) 
+
+евклидово расстояние вычисляется следующим:
+
 ![d\left( p1,p2 \right)=\sqrt[]{\left( x_1 - x_2 \right)^{2}+\left( y_1 - y_2 \right)^{2}}](https://bit.ly/3KKdr3i) 
+
 Для реализации этой формулы в Java можно использовать класс [Math](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html) (является частью Java API) который обеспечивает основные метаматематические операции над числами, например:
 ```java
 double x = 4;  
