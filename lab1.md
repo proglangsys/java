@@ -349,6 +349,14 @@ public class MyMainClass {
 
 Обновить Maven проект, нажав кнопку «Reload All Maven Projects», удалить предыдущую сборку — «clean» в списке «Lifecycle» и запустить новую сборку — «install» в списке «Lifecycle».
 
+В случае ошибки "Source option 5 is no longer supported. Use 6 or later", добавте в pom.xml следующий код:
+```
+<properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+```
+
 ### Создание и сборка проекта Gradle
 
 #### Создать новый проект
