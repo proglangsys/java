@@ -349,7 +349,7 @@ public class MyMainClass {
 
 Обновить Maven проект, нажав кнопку «Reload All Maven Projects», удалить предыдущую сборку — «clean» в списке «Lifecycle» и запустить новую сборку — «install» в списке «Lifecycle».
 
-> В случае ошибки сборки «Source option 5 is no longer supported. Use 6 or later» добавьте в pom.xml версию Java в секцию "properties", например, для Java 8, это будет выглядеть следующим образом:
+> В случае ошибки сборки «Source option 5 is no longer supported. Use 6 or later» добавьте в pom.xml версию Java в секции "properties", например, для Java 8, это будет выглядеть следующим образом:
 ```xml
 <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
