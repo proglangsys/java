@@ -264,10 +264,13 @@ String status = scanner.nextLine();
 switch (status) {
     case "accepted" :
         System.out.println("Принять");
+        break;
     case "revision" :
         System.out.println("Доработать");
+        break;
     case "declined" :
         System.out.println("Отклонить");
+        break;
     default :
         System.out.println("Статус не определен");
 }
