@@ -341,6 +341,6 @@ public class MyMainClass {
 1.	Г. Шилдт. Java Руководство для начинающих. Глава 2
 2.	[Обратная польская запись](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
 3. [Arithmetic expression evaluation](https://www.geeksforgeeks.org/arithmetic-expression-evalution)
-4. [Алгоритм сортировочной станции](https://en.wikipedia.org/wiki/Shunting_yard_algorithm)
-5. [Java program to implement shunting yard algorithm](https://www.geeksforgeeks.org/java-program-to-implement-shunting-yard-algorithm)
-6. [Evaluate the value of an arithmetic expression in reverse polish notation in Java](https://www.geeksforgeeks.org/evaluate-the-value-of-an-arithmetic-expression-in-reverse-polish-notation-in-java/)
+4. [Evaluate the value of an arithmetic expression in reverse polish notation in Java](https://www.geeksforgeeks.org/evaluate-the-value-of-an-arithmetic-expression-in-reverse-polish-notation-in-java/)
+5. [Алгоритм сортировочной станции](https://en.wikipedia.org/wiki/Shunting_yard_algorithm)
+6. [Java program to implement shunting yard algorithm](https://www.geeksforgeeks.org/java-program-to-implement-shunting-yard-algorithm)
