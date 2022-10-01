@@ -142,26 +142,6 @@ for (int i = 0; i < s.length(); i++) {
 }
 ```
 
-Токенизация строк с помощью метода split.
-```java
-String s = "my text";
-String[] tokens = s.split(" ");
-
-for (int i = 0; i < tokens.length; i++) {
-    System.out.println(tokens[i]);
-}
-```
-
-Токенизация строк с помощью класса StringTokenizer.
-```java
-String s = "my text";
-StringTokenizer st = new StringTokenizer(s);
-
-while (st.hasMoreTokens()) {
-    System.out.println(st.nextToken());
-}
-```
-
 Проверка строк на равенство.
 ```java
 String s1 = "my text";
@@ -201,6 +181,28 @@ public class MyMainClass {
 При запуске программы из IDE, данные вводятся во встроенной командной сроке IDE.
 
 ![Снимок экрана: ввод данных в эмуляторе командной строки IDE](https://github.com/proglangsys/java/blob/main/images/lab2_1.png)
+
+### Токенизация строк
+
+Токенизация строк с помощью метода split.
+```java
+String s = "my text";
+String[] tokens = s.split(" ");
+
+for (int i = 0; i < tokens.length; i++) {
+    System.out.println(tokens[i]);
+}
+```
+
+Токенизация строк с помощью класса StringTokenizer.
+```java
+String s = "my text";
+StringTokenizer st = new StringTokenizer(s);
+
+while (st.hasMoreTokens()) {
+    System.out.println(st.nextToken());
+}
+```
 
 ### Условная инструкция if
 
