@@ -5,6 +5,7 @@
 ### Классы
 
 ![Класс и объект](https://cdn-images.visual-paradigm.com/guide/uml/uml-class-diagram-tutorial/01-uml-base-class-and-object-explained.png)
+
 Картинка с сайта [Visual-Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial)
 
 Класс состоит из объявления и тела. Класс объявляется с помощью ключевого слова `class`.
