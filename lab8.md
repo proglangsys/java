@@ -4,8 +4,8 @@
 
 ## Инструментальные средства
 
-Инструментальные средства 
-Подключаемый модуль «PlantUML Integration»
+### Подключаемый модуль «PlantUML Integration»
+
 Для того чтобы установить подключаемый модуль PlantUML в IDE, необходимо открыть меню «File -> Settings», выбрать вкладку «Plugins» на панели слева, затем напечатать «PlantUML» в строке поиска, выбрать пункт «PlantUML Integration» и нажать кнопку «Install».
 
 ![Снимок экрана:](https://github.com/proglangsys/java/blob/main/images/lab8_1.png)
@@ -19,6 +19,8 @@
 ![Снимок экрана:](https://github.com/proglangsys/java/blob/main/images/lab8_2.png)
 
 ![Снимок экрана:](https://github.com/proglangsys/java/blob/main/images/lab8_3.png)
+
+### PlantUML онлайн
 
 Официальный веб-сайт PlantUML — [http://www.plantuml.com](http://www.plantuml.com) предоставляет редактирование и визуализацию UML диаграмм онлайн. Можно использовать для создания диаграмм классов без установки подключаемого модуля «PlantUML Integration» в IDE.
 
