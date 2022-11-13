@@ -258,7 +258,7 @@ public class MyMainClass {
 
 _Стек_ — абстрактный тип данных, список однотипных элементов, организованных по принципу «*Last  In, First  Out*» (LIFO) — «*последним пришёл, первым вышел*».
 
-![enter image description here](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BA#/media/%D0%A4%D0%B0%D0%B9%D0%BB:Lifo_stack.svg)
+![Организация стека в виде одномерного упорядоченного по адресам массива. Показаны операции вталкивания и выталкивания данных из стека операциями push и pop.](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lifo_stack.svg/2560px-Lifo_stack.svg.png)
 
 ## Задание
 
