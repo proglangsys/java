@@ -198,7 +198,7 @@ _Коллекция_ — структура данных, предназначе
 | Set        | Множество содержит уникальные элементы                                                                        |
 | Map        | Отображение сопоставляет уникальным ключам значения                                                           |
 
-![enter image description here](https://en.wikipedia.org/wiki/Java_collections_framework#/media/File:Java.util.Collection_hierarchy.svg)
+![Иерархия коллекций](https://en.wikipedia.org/wiki/Java_collections_framework#/media/File:Java.util.Collection_hierarchy.svg)
 
 Пример использования списка на основе динамического массива.
 ```java
