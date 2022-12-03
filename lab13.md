@@ -373,5 +373,7 @@ _Вариант 2_: графический редактор с drag&drop и со
 
 ## Ресурсы
 
-1. https://docs.oracle.com/javase/tutorial/uiswing/events
-2. https://coderlessons.com/tutorials/java-tekhnologii/nauchitsia-kachatsia/swing-obrabotka-sobytii
+1. Г. Шилдт. Java Руководство для начинающих. Глава 16. Введение в Swing
+2. Г. Шилдт (2015) Java 8 Полное руководство (Девятое издание). Часть III. Введение в программирование ГПИ средствами Swing
+3. https://docs.oracle.com/javase/tutorial/uiswing/events
+4. https://coderlessons.com/tutorials/java-tekhnologii/nauchitsia-kachatsia/swing-obrabotka-sobytii
