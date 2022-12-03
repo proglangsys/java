@@ -90,6 +90,9 @@ public class DemoApp {
 
 ### Обработка событий
 
+Модель обработки событий.
+![Модель обработки событий](https://static.javatpoint.com/core/images/delegation-event-model-in-java.png)
+
 Использование анонимных классов для реализации обработчиков событий.
 ```java
 import javax.swing.*;
