@@ -373,4 +373,5 @@ _Вариант 2_: графический редактор с drag&drop и со
 
 ## Ресурсы
 
-1.	
+1. https://docs.oracle.com/javase/tutorial/uiswing/events
+2. https://coderlessons.com/tutorials/java-tekhnologii/nauchitsia-kachatsia/swing-obrabotka-sobytii
