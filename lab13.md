@@ -380,3 +380,4 @@ _Вариант 2_: графический редактор с drag&drop и со
 5. [The Java™ Tutorials — Writing Event Listeners](https://docs.oracle.com/javase/tutorial/uiswing/events)
 6. [CoderLessons.com SWING — обработка событий](https://coderlessons.com/tutorials/java-tekhnologii/nauchitsia-kachatsia/swing-obrabotka-sobytii)
 7. [Javatpoint — Java Swing Tutorial](https://www.javatpoint.com/java-swing)
+8. Видеоуроки(https://www.youtube.com/playlist?list=PL786bPIlqEjTN-Sy8uMLQ6s85qNxP1hAp)
