@@ -24,9 +24,9 @@ _Scene_ — сцена, это контейнер для размещения UI
 
 Метод `launch()` запускает приложение.
 
-### Создание JavaFX проекта
+### Создание стартового JavaFX приложения
 
-Можно воспользоваться опцией IntelliJ IDEA --- создание JavaFX проектов. При создании нового проекта выбрать пункт JavaFX. 
+Можно воспользоваться опцией IntelliJ IDEA — создание JavaFX проектов. При создании нового проекта выбрать пункт JavaFX. 
 
 ![Форма создания нового проекта](images/lab14_1.png)
 
@@ -34,9 +34,7 @@ _Scene_ — сцена, это контейнер для размещения UI
 
 ![Сгенерированный проект](images/lab14_2.png)
 
-### Создание JavaFX приложения
-
-Стартовое приложение.
+Стартовое JavaFX приложение.
 ```java
 package proglangsys.javafx;
 
@@ -62,101 +60,9 @@ public class HelloApplication extends Application {
 }
 ```
 
-Простой текстовый редактор.
-```java
-package proglangsys.javafx;
-
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-
-public class MySimpleTextEditor extends Application {
-    TextArea textArea = new TextArea();
-
-    @Override
-    public void start(Stage stage) {
-        Menu menuFile = new Menu("File");
-
-        MenuItem miNew = new MenuItem("New");
-        miNew.setOnAction(e -> clear());
-        MenuItem miOpen = new MenuItem("Open");
-        miOpen.setOnAction(e -> open());
-        MenuItem miSave = new MenuItem("Save");
-        miSave.setOnAction(e -> save());
-        menuFile.getItems().addAll(miNew, miOpen, miSave);
-
-        Menu menuEdit = new Menu("Edit");
-
-        MenuItem miCut = new MenuItem("Cut");
-        MenuItem miCopy = new MenuItem("Copy");
-        MenuItem miPaste = new MenuItem("Paste");
-
-        menuEdit.getItems().addAll(miCut, miCopy, miPaste);
-
-        MenuBar mb = new MenuBar();
-        mb.getMenus().add(menuFile);
-        mb.getMenus().add(menuEdit);
-
-        BorderPane rootNode = new BorderPane() ;
-        rootNode.setTop(mb);
-        rootNode.setCenter(textArea);
-
-        Scene scene = new Scene(rootNode, 600, 400);
-        stage.setTitle("My Simple Text Editor");
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch();
-    }
-
-    public void clear() {
-        textArea.setText("");
-    }
-
-    public void open() {
-        FileChooser fileChooser = new FileChooser();
-        File file = fileChooser.showOpenDialog(null);
-
-        if (file == null) return;
-
-        try {
-            String text = Files.readString(file.toPath());
-            textArea.setText(text);
-        } catch (IOException e) {
-            new Alert(Alert.AlertType.INFORMATION, e.getMessage()).showAndWait();
-        }
-    }
-
-    public void save() {
-        FileChooser fileChooser = new FileChooser();
-        File file = fileChooser.showSaveDialog(null);
-
-        if (file == null) return;
-
-        try {
-            String text = textArea.getText();
-            Files.writeString(file.toPath(), text);
-        } catch (IOException e) {
-            new Alert(Alert.AlertType.INFORMATION, e.getMessage()).showAndWait();
-        }
-    }
-}
-```
-
-### FXML
+### Простой текстовый редактор на основе FXML
 
 FXML язык разметки на основе XML, позволяющий определить интерфейс JavaFX приложения декларативным способом.
-
-**Простой текстовый редактор с помощью FXML**
 
 Структура проекта.
 ```
@@ -277,6 +183,96 @@ module proglangsys.javafx {
     
     opens proglangsys.javafx to javafx.fxml;
     exports proglangsys.javafx;
+}
+```
+
+### Простой текстовый редактор без FXML
+```java
+package proglangsys.javafx;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
+public class MySimpleTextEditor extends Application {
+    TextArea textArea = new TextArea();
+
+    @Override
+    public void start(Stage stage) {
+        Menu menuFile = new Menu("File");
+
+        MenuItem miNew = new MenuItem("New");
+        miNew.setOnAction(e -> clear());
+        MenuItem miOpen = new MenuItem("Open");
+        miOpen.setOnAction(e -> open());
+        MenuItem miSave = new MenuItem("Save");
+        miSave.setOnAction(e -> save());
+        menuFile.getItems().addAll(miNew, miOpen, miSave);
+
+        Menu menuEdit = new Menu("Edit");
+
+        MenuItem miCut = new MenuItem("Cut");
+        MenuItem miCopy = new MenuItem("Copy");
+        MenuItem miPaste = new MenuItem("Paste");
+
+        menuEdit.getItems().addAll(miCut, miCopy, miPaste);
+
+        MenuBar mb = new MenuBar();
+        mb.getMenus().add(menuFile);
+        mb.getMenus().add(menuEdit);
+
+        BorderPane rootNode = new BorderPane() ;
+        rootNode.setTop(mb);
+        rootNode.setCenter(textArea);
+
+        Scene scene = new Scene(rootNode, 600, 400);
+        stage.setTitle("My Simple Text Editor");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+
+    public void clear() {
+        textArea.setText("");
+    }
+
+    public void open() {
+        FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showOpenDialog(null);
+
+        if (file == null) return;
+
+        try {
+            String text = Files.readString(file.toPath());
+            textArea.setText(text);
+        } catch (IOException e) {
+            new Alert(Alert.AlertType.INFORMATION, e.getMessage()).showAndWait();
+        }
+    }
+
+    public void save() {
+        FileChooser fileChooser = new FileChooser();
+        File file = fileChooser.showSaveDialog(null);
+
+        if (file == null) return;
+
+        try {
+            String text = textArea.getText();
+            Files.writeString(file.toPath(), text);
+        } catch (IOException e) {
+            new Alert(Alert.AlertType.INFORMATION, e.getMessage()).showAndWait();
+        }
+    }
 }
 ```
 
