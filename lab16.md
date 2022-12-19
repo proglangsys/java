@@ -8,13 +8,13 @@
 
 Сгенерировать стартовый проект можно с помощью онлайн сервиса Spring Initializr — https://start.spring.io.
 Указать следующие параметры проекта:
-•	Project: Maven Project
-•	Language: Java
-•	Project Metadata -> Group: "proglangsys.web"
-•	Artifact -> Group: WhatTime
-•	Name -> WhatTime
-•	Package name: "proglangsys.web"
-•	Packaging: JAR
+- Project: Maven Project
+- Language: Java
+- Project Metadata -> Group: "proglangsys.web"
+- Artifact -> Group: WhatTime
+- Name -> WhatTime
+- Package name: "proglangsys.web"
+- Packaging: JAR
 
 ![Spring Initializr: параметры проекта](images/lab16_1.png)
 
